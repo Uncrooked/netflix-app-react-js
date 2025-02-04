@@ -1,0 +1,27 @@
+#nav-right-header .all-searched a{
+    display:flex;
+    gap:var(--l-size);
+    align-items: center;
+    width:100%;
+    padding-block:var(--l-size);
+}
+
+#nav-right-header .all-searched a .container-img{
+    width:50px;
+    height:75px;
+    overflow:hidden;
+    border-radius:var(--xs-size);
+}
+
+#nav-right-header .all-searched a .container-img img{
+    width:100%;
+}
+
+@media(max-width:425px){
+    #nav-right-header .all-searched{
+        max-width: 200px;
+        position:absolute;
+        left:0;
+        top:60px !important;
+    }
+}

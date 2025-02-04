@@ -1,0 +1,18 @@
+#nav-right-header .all-searched{
+    position:absolute;
+    display:flex;
+    flex-direction:column;
+    top:var(--four-xl-size);
+    border-radius:var(--m-size);
+    padding:var(--l-size);
+    right:0;
+    width:100%;
+    background-color: var(--black-color);
+    max-height:300px;
+    overflow-y:scroll;
+    gap:0;
+}
+
+#nav-right-header #search-results{
+    position:relative;
+}

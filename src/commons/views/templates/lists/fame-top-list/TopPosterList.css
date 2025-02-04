@@ -1,0 +1,20 @@
+.top-poster-list-container .top-poster-list{
+    display:flex;
+    gap:var(--l-size);
+    overflow-x:scroll;
+    width:100vw;
+}
+
+.top-poster-list-container .top-poster-list::-webkit-scrollbar{
+    display:none;
+}
+
+.top-poster-list-container h3{
+    margin-top:var(--two-xl-size);
+}
+
+@media(max-width:425px){
+    .top-poster-list-container h3{
+        text-align:left;
+    }
+}

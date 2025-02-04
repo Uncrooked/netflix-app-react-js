@@ -1,0 +1,7 @@
+#fame-top{
+    padding-block:var(--four-xl-size);
+}
+
+#fame-top h2, #fame-top h3{
+    margin-left:var(--responsive-spacing);
+}

@@ -1,0 +1,27 @@
+.fame-top-container{
+    display:flex;
+    align-items: center;
+    padding:var(--s-size);
+    border-radius:var(--l-size);
+    width:fit-content;
+    transition:all 0.3s;
+}
+
+.fame-top-container p.position{
+    -webkit-text-stroke: 1px var(--grey-color);
+    paint-order: stroke fill;
+    color:var(--little-dark-grey);
+    font-size:200px;
+    font-weight:bolder;
+    position:relative;
+    left:var(--m-size);
+}
+
+
+.fame-top-container:hover{
+    background-color: var(--little-dark-grey);
+}
+
+.fame-top-container:hover p.position{
+    color:var(--grey-color);
+}

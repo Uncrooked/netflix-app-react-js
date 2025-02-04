@@ -1,0 +1,16 @@
+#header{
+    display:flex;
+    align-items: center;
+    padding-block:var(--l-size);
+    gap:var(--l-size);
+    position:fixed;
+    z-index:2;
+    width:calc(100vw - 2 * var(--responsive-spacing));
+    background-color: var(--black-color);
+}
+
+@media(max-width:425px){
+    #header{
+        justify-content: space-between;
+    }
+}

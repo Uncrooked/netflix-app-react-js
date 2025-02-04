@@ -1,0 +1,16 @@
+.label-tag{
+    width:fit-content;
+    padding:var(--xs-size);
+    border-radius:var(--xs-size);
+    font-weight:600;
+}
+
+.label-tag.white{
+    background-color:var(--white-color);
+    color:var(--black-color);
+}
+
+.label-tag.red{
+    background-color:var(--red-color);
+    color:var(--white-color);
+}

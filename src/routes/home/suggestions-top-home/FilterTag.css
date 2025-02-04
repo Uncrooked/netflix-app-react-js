@@ -1,0 +1,34 @@
+#filter-tag{
+    position:absolute;
+    left:var(--three-xl-size);
+    top:240px;
+    width:400px;
+}
+
+#filter-tag .top{
+    font-size:var(--s-font-size);
+    top:var(--s-size);
+}
+
+#filter-tag .middle{
+    font-size:var(--three-xl-font-size);
+    font-weight:900;
+    color:var(--red-color);
+    text-transform: uppercase;
+    height:50px;
+    max-height:fit-content;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+
+#filter-tag .bottom{
+    font-size:var(--xl-font-size);
+    text-transform: uppercase;
+}
+
+#filter-tag .flex-container{
+    display:flex;
+    align-items:center;
+    gap:var(--xs-size);
+}

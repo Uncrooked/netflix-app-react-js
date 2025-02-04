@@ -1,0 +1,19 @@
+.poster-loading{
+    width:100%;
+    height:100%;
+    animation-name:poster-loading-animation;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes poster-loading-animation{
+    0%{
+        background-color: var(--grey-color);
+    }
+    50%{
+        background-color: var(--little-dark-grey);
+    }
+    100%{
+        background-color: var(--grey-color);
+    }
+}

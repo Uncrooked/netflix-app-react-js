@@ -1,0 +1,20 @@
+#nav-right-header{
+    display:flex;
+    align-items: center;
+    gap:var(--l-size);
+}
+
+#nav-right-header div{
+    display:flex;
+    flex-direction:row-reverse;
+    align-items: center;
+    gap:var(--l-size);
+}
+
+@media(max-width:425px){
+    #nav-right-header{
+        flex-direction:column-reverse;
+        gap:var(--s-size);
+        align-items: start;
+    }   
+}

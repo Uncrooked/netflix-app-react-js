@@ -1,0 +1,17 @@
+.dropdown{
+    background-color:var(--little-dark-grey);
+    padding-block:var(--m-size);
+    padding-inline:var(--m-size);
+    padding-right:calc(var(--m-size) + 20px);
+    font-size:var(--s-font-size);
+    border-radius:var(--s-size);
+    color:var(--white-color);
+    font-weight:bolder;
+    appearance: none;
+    background-image:url("/assets/img/svg/dropdown-icon.svg");
+    background-size:15px 10px;
+    background-repeat: no-repeat;
+    background-position: center right var(--m-size);
+    border:solid 1px var(--grey-color);
+    height:fit-content
+}

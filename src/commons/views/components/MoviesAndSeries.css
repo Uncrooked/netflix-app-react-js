@@ -1,0 +1,9 @@
+.movies-and-series{
+    display:block;
+    color:rgba(255,255,255);
+    font-size:var(--s-font-size);
+    background-color:rgba(255,255,255,0.2);
+    border-radius:var(--xs-size);
+    padding:var(--xs-size);
+    width:fit-content;
+}

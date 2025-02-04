@@ -1,0 +1,32 @@
+.round-btn{
+    padding:7px;
+    width:25px;
+    height:25px;
+    border-radius:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    transition:all 0.3s;
+}
+
+.round-btn:hover{
+    transform:scale(1.05);
+}
+
+.round-btn img{
+    width:20px;
+    height:20px;
+}
+
+.round-btn img.little-icon{
+    width:20px;
+}
+
+.round-btn.primary{
+    filter: invert(1);
+    background-color:var(--black-color);
+}
+
+.round-btn.secondary{
+    background-color:var(--grey-color);
+}

@@ -1,0 +1,27 @@
+.btn{
+    display:flex;
+    gap:var(--l-size);
+    align-items:center;
+    width:fit-content;
+    padding:var(--m-size);
+    border-radius:var(--s-size);
+    font-weight:900;
+    transition:all 0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.03);
+}
+
+.btn img{
+    width:25px;
+}
+
+.btn.primary{
+    background-color:var(--red-color);
+}
+
+.btn.secondary{
+    background-color:var(--white-color);
+    color:var(--red-color);
+}

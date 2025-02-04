@@ -1,0 +1,49 @@
+#nav-left-header{
+    display:flex;
+    align-items: center;
+    gap:var(--l-size);
+}
+
+#nav-left-header a{
+    position:relative;
+}
+
+#nav-left-header a::after{
+    animation-name:afterAnimationMouseLeave;
+    animation-fill-mode:forwards;
+    animation-duration:0.5s;
+    content:"";
+    display:block;
+    background-color:var(--white-color);
+    height:1.5px;
+    width:100%;
+    margin-top:2px;
+    transform-origin: right;
+}
+
+@keyframes afterAnimationMouseLeave {
+    0%{transform:scaleX(1)}
+    100%{transform:scaleX(0)}
+}
+
+#nav-left-header a:hover::after{
+    animation-name:afterAnimation;
+    animation-duration:0.5s;
+    transform-origin: left;
+}
+
+@keyframes afterAnimation {
+    0%{transform:scaleX(0)}
+    100%{transform:scaleX(1)}
+}
+
+@media (max-width:425px){
+    #nav-left-header{
+        flex-direction:column;
+        align-items: start;
+    }   
+
+    #nav-left-header a{
+        font-size:var(--xl-font-size);
+    }
+}

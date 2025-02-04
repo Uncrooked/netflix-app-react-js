@@ -1,0 +1,30 @@
+form.search-form{
+    display:flex;
+    align-items: center;
+    height:48.5px;
+}
+
+form.search-form input{
+    padding:var(--m-size);
+    border-radius:var(--s-size);
+    font-size:var(--s-font-size);
+    background-color:var(--little-dark-grey);
+    border:none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+form.search-form button{
+    padding:0;
+    background-color:transparent;
+    border:none;
+    background-color:var(--little-dark-grey);
+    height:100%;
+    padding-right:var(--m-size);
+    border-bottom-right-radius: var(--s-size);
+    border-top-right-radius: var(--s-size);
+}
+
+form.search-form button img{
+    width:var(--l-size);
+}

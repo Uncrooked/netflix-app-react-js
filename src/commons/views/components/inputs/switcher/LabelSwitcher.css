@@ -1,0 +1,20 @@
+form.switcher label{
+    padding:var(--s-size);
+    display:inline-block;
+    color:var(--black-color);
+    border-radius:100px;
+    font-weight:bold;
+}
+
+form.switcher input:checked + label{
+    color:var(--white-color);
+    background-color:var(--red-color);
+    animation-name:label-switcher-animation;
+    animation-duration:0.5s;
+}
+
+@keyframes label-switcher-animation{
+    0%{transform:scale(0); transform:translateY(-10px)}
+    50%{transform:scale(1.05);}
+    10%{transform:scale(1); transform:translateY(0px)}
+}

@@ -1,0 +1,49 @@
+.my-list-container-grid{
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    gap:var(--s-size);
+    justify-content: center;
+    overflow-y:hidden;
+    max-height:250px;
+    transition:all 0.3s;
+    position: relative;
+}
+
+.my-list-container-grid::after{
+    content:" ";
+    display:block;
+    height:150px;
+    background:linear-gradient(transparent,var(--black-color));
+    bottom:0;
+    width:100%;
+    position:absolute;
+    
+}
+
+.my-list-container-grid .poster-suggestion{
+    min-width:0 !important;
+    width:100% !important;
+    overflow:hidden;
+}
+
+
+.my-list-container-grid.height-fit-content::after{
+    display:none;
+}
+.my-list-container-grid.height-fit-content{
+    max-height:fit-content;
+}
+
+
+@media(max-width:425px){
+    .my-list-container-grid{
+        grid-template-columns: 50% 50%;
+        height:400px;
+        overflow:hidden;
+    }
+}
+
+/*home*/
+#my-space-suggestions .my-list-container-grid{
+    margin-inline:var(--responsive-spacing);
+}

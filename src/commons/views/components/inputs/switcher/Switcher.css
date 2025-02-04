@@ -1,0 +1,11 @@
+form.switcher{
+    background-color:var(--white-color);
+    width:fit-content;
+    padding:var(--xs-size);
+    border-radius:100px;
+    display:flex;
+}
+
+form.switcher input{
+    display:none;
+}

@@ -1,0 +1,8 @@
+.social-link img{
+    width:35px;
+}
+
+.social-link{
+    margin-left:var(--xs-size);
+    width:fit-content;
+}

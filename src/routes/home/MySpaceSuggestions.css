@@ -1,0 +1,12 @@
+#my-space-suggestions{
+    padding-bottom:var(--four-xl-size);
+    padding-top:var(--five-xl-size);
+}
+
+#my-space-suggestions h2,#my-space-suggestions h3{
+    margin-left:var(--responsive-spacing);
+}
+
+#my-space-suggestions h3{
+    margin-top:var(--two-xl-size);
+}

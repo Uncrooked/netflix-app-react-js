@@ -1,0 +1,16 @@
+#header .burger-menu, #header .nav-links .cross-menu{
+    display:none;
+}
+
+@media (max-width:425px){
+    #header .burger-menu, #header .nav-links .cross-menu{
+        display:inline-block;
+    }
+
+    #header .nav-links .cross-menu img{
+        width:20px;
+        position:absolute;
+        top:var(--l-size);
+        right:var(--l-size);
+    }
+}

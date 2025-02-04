@@ -1,0 +1,17 @@
+#new{
+    padding-top:var(--five-xl-size);
+    display:flex;
+    flex-direction:column;
+    gap:var(--xl-size);
+    padding-bottom:var(--four-xl-size);
+}
+
+#new h1{
+    margin-bottom:0;
+}
+
+@media(max-width:425px){
+    #new h1{
+        text-align: left;
+    }
+}

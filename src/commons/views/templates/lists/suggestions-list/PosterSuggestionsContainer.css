@@ -1,0 +1,9 @@
+.poster-suggestions-container{
+    display:flex;
+    gap:var(--s-size);
+    overflow-x:scroll;
+}
+
+.poster-suggestions-container::-webkit-scrollbar{
+    display:none;
+}

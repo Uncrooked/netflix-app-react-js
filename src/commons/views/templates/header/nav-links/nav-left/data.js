@@ -1,0 +1,65 @@
+export const allVideoFormat = [
+    {
+        id:0,
+        name:"Type de contenu",
+        value:false
+    },
+    {
+        id:1,
+        name:"Séries",
+        value:"tv"
+    },
+    {
+        id:2,
+        name:"Films",
+        value:"movie"
+    }
+]
+
+export const allCategories = [
+    {
+        id:0,
+        name:"Catégorie",
+        value:false
+    },
+    {
+        id:1,
+        name:"Familial",
+        value:10751
+    },
+    {
+        id:2,
+        name:"Western",
+        value:37
+    },
+    {
+        id:3,
+        name:"Animation",
+        value:16
+    },
+    {
+        id:4,
+        name:"Documentaire",
+        value:99
+    },
+    {
+        id:5,
+        name:"Mystère",
+        value:9648
+    },
+    {
+        id:6,
+        name:"Comédie",
+        value:35
+    },
+    {
+        id:7,
+        name:"Crime",
+        value:80
+    },
+    {
+        id:8,
+        name:"Drame",
+        value:18
+    }
+]

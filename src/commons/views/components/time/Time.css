@@ -1,0 +1,25 @@
+
+
+.poster-suggestion .hover-layer .time-container{
+    display:flex;
+    align-items: center;
+    gap:var(--s-size);
+}
+
+.poster-suggestion .hover-layer .time-container p{
+    word-wrap:unset;
+    width:fit-content;
+    text-align: right;
+}
+
+.poster-suggestion .hover-layer .time{
+    background-color:var(--grey-color);
+    flex-grow:1;
+    height:3px;
+}
+
+.poster-suggestion .hover-layer .time .time-past{
+    height:100%;
+    width:100px;
+    background-color:var(--red-color);
+}

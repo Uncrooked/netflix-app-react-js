@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --black-color:hsla(0, 0%, 7%, 1);
+    --grey-color:hsla(0, 0%, 35%, 1);
+    --little-dark-grey:hsla(0, 0%, 20%, 1);
+    --red-color:hsla(356, 93%, 42%, 1);
+    --white-color:hsla(0, 0%, 90%, 1);
+    --little-light-grey:hsla(0, 0%, 50%, 1);
+
+    --xs-size:5px;
+    --s-size:10px;
+    --m-size:15px;
+    --l-size:20px;
+    --xl-size:30px;
+    --two-xl-size:40px;
+    --three-xl-size:50px;
+    --four-xl-size:80px;
+    --five-xl-size:100px;
+    --six-xl-size:150px;
+    --seven-xl-size:200px;
+
+
+    --xs-font-size:14px;
+    --s-font-size:16px;
+    --m-font-size:18px;
+    --l-font-size:20px;
+    --xl-font-size:24px;
+    --two-xl-font-size:28px;
+    --three-xl-font-size:32px;
+    --four-xl-font-size:36px;
+    --five-xl-font-size:40px;
+    --six-xl-font-size:48px;
+    --seven-xl-font-size:64px;
+
+    --responsive-spacing:50px;
+}
+
+*{
+    padding:0;
+    margin:0;
+    scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {   
+    display: none;
+}
+
+ul li{
+    list-style: none;
+}
+
+.top-poster-list-container .top-poster-list li:first-child,.poster-suggestions-container li:first-child{
+    margin-left:var(--responsive-spacing);
+}
+
+.top-poster-list-container .top-poster-list li:last-child,.poster-suggestions-container li:last-child{
+    margin-right:var(--responsive-spacing);
+}
+
+.display-none{
+    display:none !important;
+}
+
+section.responsive-spacing{
+    padding-inline:var(--responsive-spacing);
+}
+
+body{
+    background-color:var(--black-color);
+}
+
+input, p, h1, h2, h3, h4, h5, h6, span, div, a{
+    color:var(--white-color);
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    font-weight:600;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight:bolder;
+    margin-bottom:var(--m-size);
+}
+
+h1{
+    font-size:var(--six-xl-font-size);
+}
+
+h2{
+    font-size:var(--five-xl-font-size);
+}
+
+h3{
+    font-size:var(--three-xl-font-size);
+    font-weight:500;
+}
+
+h4{
+    font-size:var(--two-xl-font-size);
+}
+
+h5{
+    font-size:var(--xl-font-size);
+}
+
+h6{
+    font-size:var(--l-font-size);
+}
+
+p{
+    font-size:var(--s-font-size);
+}
+
+@media(max-width:425px){
+
+    h1{
+        font-size:var(--five-xl-font-size);
+    }
+    
+    h2{
+        font-size:var(--three-xl-font-size);
+    }
+
+    h3{
+        font-size:var(--two-xl-font-size);
+    }
+
+    :root{
+        --responsive-spacing:10px;
+    }
+}

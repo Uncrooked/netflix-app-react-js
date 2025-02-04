@@ -1,0 +1,30 @@
+.my-list-container{
+    margin-top:var(--two-xl-size);
+}
+
+
+.my-list-container .develop{
+    margin-bottom:var(--s-size);
+    width:20px;
+    transition:all 0.3s;
+    padding: 10px 7px;
+    border-radius:100px;
+}
+
+.my-list-container .develop:hover{
+    background-color:var(--little-dark-grey);
+}
+
+.my-list-container .more{
+    transform:rotate(-90deg);
+}
+
+.my-list-container .less{
+    transform:rotate(0deg);
+}
+
+.my-list-container .top{
+    display:flex;
+    align-items: center;
+    gap:var(--s-size);
+}

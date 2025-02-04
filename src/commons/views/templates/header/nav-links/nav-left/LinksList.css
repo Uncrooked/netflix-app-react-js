@@ -1,0 +1,14 @@
+#links-header{
+    display:flex;
+    gap:var(--m-size);
+}
+
+#links-header li{
+    list-style: none;
+}
+
+@media(max-width:425px){
+    #links-header{
+        flex-direction:column;
+    }
+}

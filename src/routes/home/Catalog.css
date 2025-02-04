@@ -1,0 +1,11 @@
+#catalog{
+    padding-block:var(--four-xl-size);
+}
+
+#catalog h3, #catalog h2{
+    margin-left:var(--responsive-spacing);
+}
+
+#catalog h3{
+    margin-top:var(--two-xl-size);
+}
