@@ -16,6 +16,7 @@ npm run dev
 # build le projet
 npm run build
 
+# lancer un serveur local pour le build
 serve -s dist
 
 si pas :
