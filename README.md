@@ -15,6 +15,7 @@ npm run dev
 
 # build le projet
 npm run build
+
 serve -s dist
 
 si pas :
