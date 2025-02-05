@@ -28,7 +28,7 @@ export default function SuggestionsTopHome(props){
 
     return(
         <section className="suggestions-top-home" >
-            <FilterTag />
+            <FilterTag genreSelected={props.genreSelected} contentTypeSelected={props.contentTypeSelected} />
             <h1>{topFilmSuggestion.title}</h1>
             <p className="desc">{topFilmSuggestion.overview}</p>
             <div className="btn-container outside">

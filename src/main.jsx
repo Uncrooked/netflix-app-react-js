@@ -20,8 +20,8 @@ import "./main.css";
 function App(){
 
   //dropdown selected
-  const [contentTypeSelected,setContentTypeSelected] = useState("movie");
-  const [genreSelected,setGenreSelected] = useState(10751);
+  const [contentTypeSelected,setContentTypeSelected] = useState(true);
+  const [genreSelected,setGenreSelected] = useState(true);
   const [isFiltered,setIsFiltered] = useState(false);
 
   //data fetched
@@ -30,11 +30,20 @@ function App(){
   useEffect(() => {
 
     let isContentTypeSelected = contentTypeSelected == "false" ? false : contentTypeSelected;
-    let isGenreSelected = genreSelected == "false" ? false : genreSelected;
-    if(isContentTypeSelected || isGenreSelected){
+    let isGenreSelected = genreSelected == "false" ? false : genreSelected; 
+
+    console.log("is",isContentTypeSelected,isGenreSelected);
+
+    if(isContentTypeSelected && isGenreSelected){
+
+      let contentTypeValue = contentTypeSelected == true ? "movie" : contentTypeSelected;
+      let genreValue = genreSelected == true ? 10751  : genreSelected;
+
+      console.log("value",contentTypeValue,genreValue);
+
       const args = {
-        contentType:{current:contentTypeSelected},
-        genre:{current:genreSelected},
+        contentType:{current:contentTypeValue},
+        genre:{current:genreValue},
         pages:{
           multiple:true,
           number:7
@@ -54,7 +63,7 @@ function App(){
         setIsFiltered={setIsFiltered}
       />
       <Routes>
-        <Route path="/"  element={<Home allData={currentDataFetched} contentTypeSelected={contentTypeSelected} isFiltered={isFiltered} />} end/>
+        <Route path="/"  element={<Home allData={currentDataFetched} contentTypeSelected={contentTypeSelected} genreSelected={genreSelected} isFiltered={isFiltered} />} end/>
         <Route path="/new" element={<New setGenre={setGenreSelected} setContentType={setContentTypeSelected} selected={[contentTypeSelected,genreSelected]}/>}/>
         <Route path="/my-list" element={<MyList />}/>
       </Routes>

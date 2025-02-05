@@ -10,8 +10,8 @@ export default function PosterSuggestionsContainer(props){
 
     if(props.suggestionsData.length){
         allPoster = props.suggestionsData.map((param,index) => 
-            <li>
-                <Poster sizeFormat="landscape" pathImg={param.poster_path ? param.poster_path : param.backdrop_path} title={param.title ? param.title : param.name} key={index} serieId={param.name ? param.id : false}/>
+            <li key={param.id}>
+                <Poster sizeFormat="landscape" pathImg={param.poster_path ? param.poster_path : param.backdrop_path} title={param.title ? param.title : param.name} serieId={param.name ? param.id : false}/>
             </li>
         );
     }

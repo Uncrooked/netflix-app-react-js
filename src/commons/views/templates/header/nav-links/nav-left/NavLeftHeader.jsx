@@ -7,7 +7,7 @@ import DropDown from "../../../../components/inputs/DropDown.jsx";
 import LinksList from "./LinksList.jsx";
 
 //variables
-import { allVideoFormat, allCategories } from "./data.js";
+import { allVideoFormat, allCategories } from "../../../../../data/data.js";
 
 //functions
 import { removeHeader, handleChange } from "./functions.js";

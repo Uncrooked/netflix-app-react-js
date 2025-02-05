@@ -19,7 +19,7 @@ export default function MyList(){
 
 
     const [myListData,setMyListData] = useState([]);
-    const [myListRender,setMyListRender] = useState([]);
+    let myListRender = false;
 
     useEffect(() => {
         const allGenres = myList.map(param => param.genre);
@@ -33,17 +33,14 @@ export default function MyList(){
         }
         getData(args,setMyListData);
     },[]);
-
-    useEffect(() => {
-        if(myListData.length > 0){
-            setMyListRender(myListData.map((param,index) => {
-                if(param){
-                    return <MyListContainer value={myList[index]} suggestionsData={param} key={index}/>
-                }
-            }))
-        }
-        console.log("myListData",myListData);
-    },[myListData]);    
+    
+    if(myListData.length > 0){
+        myListRender = myListData.map((param,index) => {
+            if(param){
+                return <MyListContainer value={myList[index]} suggestionsData={param} listIndex={index} key={index}/>
+            }
+        })
+    }
     
     return(
         <section id="my-list" className="responsive-spacing">

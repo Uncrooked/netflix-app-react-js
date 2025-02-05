@@ -17,7 +17,7 @@ export default function MyListContainer(props){
         <div className="my-list-container">
             <div className="top">
                 <h2 data-value={props.value.value} >{props.value.name}</h2>
-                <img src="/public/assets/img/svg/dropdown-icon.svg" alt="icône faire développer" className={(showMore ? "less" : "more") + " develop"} onClick={(e) => {developList(e,showMore,setShowMore)}} />
+                <img src="/assets/img/svg/dropdown-icon.svg" alt="icône faire développer" className={(showMore ? "less" : "more") + " develop"} onClick={(e) => {developList(e,showMore,setShowMore)}} />
             </div>
             
             <MyListContainerGrid suggestionsData={props.suggestionsData} />

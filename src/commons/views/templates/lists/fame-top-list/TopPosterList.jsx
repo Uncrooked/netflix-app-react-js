@@ -19,13 +19,13 @@ export default function TopPosterList(props){
             genre:{current : 37},
             pages:{current:1}
         }
-        getData(args,setDataToGet);
+        getData(args,setDataToGet,10);
     },[props.contentType])
 
     if(dataToGet.length > 0){
-        topArrayRender = dataToGet.slice(10).map((param,index) => 
-            <li>
-                <TopPosterContainer positionTop={index + 1} posterData={param} key={param.id}/>
+        topArrayRender = dataToGet.map((param,index) => 
+            <li key={param.id}>
+                <TopPosterContainer positionTop={index + 1} posterData={param} />
             </li>
         )
     }

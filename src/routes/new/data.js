@@ -4,13 +4,13 @@ export const newData = [
         "label-tag":"Nouveau",
         "color":"red",
         "genre":10751,
-        "page":4,
+        "page":8,
     },
     {
         id:1,
         "label-tag":"Arrive bientôt",
         "color":"white",
         "genre":10751,
-        "page":5,
+        "page":9,
     }
 ]

@@ -1,32 +1,12 @@
-import { useState , useEffect } from "react";
+import { allCategories, allVideoFormat } from "../../../commons/data/data";
 
 import "./FilterTag.css";
 
 export default function FilterTag(props){
 
-    const [contentType,setContentType] = useState(null);
-    const [categoryForContent,setCategoryForContent] = useState(null);
-    
-    useEffect(() => {
-        function handleClick(){
-            const dropdownHeaderEl = document.getElementById("header").getElementsByClassName("dropdown")
+    let contentType = allVideoFormat.find(param => param.value == props.contentTypeSelected)?.name || null;
+    let categoryForContent = allCategories.find(param => param.value == props.genreSelected)?.name || null;
 
-            for(let dropdownEl of dropdownHeaderEl){
-                dropdownEl.onchange = () => {
-                    switch(dropdownEl.getAttribute("name")){
-                        case "category-for-content":
-                            setCategoryForContent(dropdownEl.options[dropdownEl.selectedIndex].innerText);
-                            break;
-                        case "content-type":
-                            setContentType(dropdownEl.options[dropdownEl.selectedIndex].innerText);
-                            break;
-                    }
-                }
-            }
-        }
-
-        handleClick();
-    })
     return(
         <div id="filter-tag">
             <p className="top">

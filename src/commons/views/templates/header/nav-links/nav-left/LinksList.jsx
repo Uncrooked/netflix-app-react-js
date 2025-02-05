@@ -7,7 +7,7 @@ import "./LinksList.css";
 export default function LinksList(props){
     //all Links displaying
     const LinksToDisplay = props.allLinks.map(param =>
-        <li class="link-header">
+        <li className="link-header" key={param.id} >
             <Link data={param} onClickEvent={props.onClick} key={param.id}>
                 {param.name}
             </Link>

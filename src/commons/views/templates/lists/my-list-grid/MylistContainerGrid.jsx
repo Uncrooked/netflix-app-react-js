@@ -7,9 +7,9 @@ export default function MyListContainerGrid(props){
     let suggestionsDataRender = [];
 
     if(props.suggestionsData){
-        suggestionsDataRender = props.suggestionsData.map(param => 
-            <li>
-                <Poster sizeFormat="landscape" pathImg={param.poster_path ? param.poster_path : param.backdrop_path} title={param.title ? param.title : param.name} key={param.id}/>
+        suggestionsDataRender = props.suggestionsData.map((param,index) => 
+            <li key={param.id}>
+                <Poster sizeFormat="landscape" pathImg={param.poster_path ? param.poster_path : param.backdrop_path} title={param.title ? param.title : param.name}/>
             </li>
         )
     }
