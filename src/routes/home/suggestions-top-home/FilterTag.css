@@ -32,3 +32,10 @@
     align-items:center;
     gap:var(--xs-size);
 }
+
+@media(max-width:425px){
+    #filter-tag{
+        left:10px;
+        max-width:calc(100% - 20px);
+    }
+}

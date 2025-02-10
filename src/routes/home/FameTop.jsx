@@ -3,7 +3,7 @@ import TopPosterList from "../../commons/views/templates/lists/fame-top-list/Top
 //css
 import "./FameTop.css";
 
-export default function FameTop(props){
+export default function FameTop(){
 
     return(
         <section id="fame-top">
